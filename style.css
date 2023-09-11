@@ -1,0 +1,401 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position:absolute ;
+    top: 100px;
+    left: -100%;
+    background: #111;
+    height: 60;
+    width: 40%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 20px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }}
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50hv;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #111;
+    font-size:30px;
+    
+  
+  }
+ 
+  
+ 
+  
+  
+  
+  
+  .about-image{
+    text-align: center;
+     float: right;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 200px;
+     transition: width 0.5s;
+     grid-template-columns: repeat(auto-fit, minmax(250px,1fr_));
+   }
+  
+  .about-image img {
+    width: 140px;
+  filter: brightness(0) invert(1);
+  border: black 20px;
+  background: fixed;
+  height: auto;
+  }
+ 
+
+
+.top-1{
+  display: flex;
+  justify-content: center;
+  
+}
+.staf,
+.ofice,
+.hapy-c,
+.project{
+  
+  
+  font-weight: 1;
+  justify-content: center;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project p,
+.staf p,
+.ofice p,
+.hapy-c p{
+  font-size: 80px;
+  margin: 0;
+  color: gray; /* To remove any default margin */
+}
+@media (max-width:800px) {
+.staf,
+.ofice,
+.hapy-c,
+.project{
+font-size: 9px;
+}
+}
+.big-s{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  
+}
+
+.big-s{
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+@media (max-width:900px) { 
+  
+  .big-s{font-size: 160%;}
+}
+
+
+/* Styles for the container */
+.custom-why-choose-us {
+  
+  
+  grid-template-columns: 1fr 1fr; /* Creates a 2x2 grid */
+  gap: px; /* Adds a small gap between items */
+}
+
+/* Styles for the title */
+.custom-why-choose-us-title {
+  padding-bottom: 30px;
+  
+  font-weight: bold;
+  font-size:30px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the list items */
+.custom-why-choose-us-item {
+ 
+  margin: 0;
+  padding: 10px;
+  
+}
+
+/* Remove the default list styles */
+.custom-why-choose-us-list {
+  grid-template-columns: repeat(2, 2fr);
+  display: grid; /* Use grid layout instead of flexbox */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  margin: 0;
+  
+}
+
+
+
+
+
+@media (max-width:947px) {
+  .custom-why-choose-us-list{
+    font-size: 90%;
+  }
+}
+@media (max-width:900px) {
+  .custom-why-choose-us-list{
+  display: block;
+  padding-left: 26%;
+  padding-right: 15%;
+  }
+}
+
+
+  .web-dev-img,
+  .web-desighn-img,
+  .web-com-img,
+  .web-main-img{
+    width: 370px;
+    
+  }
+  
+  .ervis-celistcustom-s{
+  display: flex;
+}
+
+
+.custom-service-item1,
+.custom-service-item2,
+.custom-service-item3{
+padding-left:5px;
+
+}
+.custom-service-item,
+.custom-service-item1,
+.custom-service-item2,
+.custom-service-item3{
+  justify-content: center;
+  text-align: center;
+}
+/* Styles for images when window width is less than or equal to 1399px */
+@media (max-width: 1534px) {
+  .web-dev-img,
+  .web-desighn-img,
+  .web-com-img,
+  .web-main-img {
+    width: 50%; /* Reduce the width of images to fit 2 images in a row */
+  }
+
+  .ervis-celistcustom-s {
+    display: grid; /* Use grid layout instead of flexbox */
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 10px; /* Adjust this value to control the gap between images */
+  }
+
+  .custom-service-item1,
+  .custom-service-item2,
+  .custom-service-item3 {
+    padding-left: 5px;
+  }
+
+  .custom-service-item,
+  .custom-service-item1,
+  .custom-service-item2,
+  .custom-service-item3 {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
+
+  .custom-our-services {
+    grid-template-columns: 1fr; /* Single column layout for 4x1 */
+  }
+
+  .custom-service-grid {
+    grid-template-columns: 1fr; /* Single column layout for 4x1 */
+  }
+
+  .web-dev-img,
+  .web-desighn-img,
+  .web-com-img,
+  .web-main-img {
+    width: 250px; /* Adjust the image width to fill the available width */
+  }
+}
+
+
+@media (max-width: 800px) {
+  .custom-our-services {
+    display: block; /* Change to block display to stack in a vertical line */
+  }
+
+  .custom-service-grid {
+    display: block; /* Change to block display to stack in a vertical line */
+  }
+
+  .ervis-celistcustom-s{
+    display: block;
+  }
+
+  .web-dev-img,
+  .web-desighn-img,
+  .web-com-img,
+  .web-main-img {
+    width: 80%; /* Adjust the image width to fill the available width */
+  }
+}
+
+
+/* Your existing styles for the rest of the website go here */
+/* ... */
+
+/* Footer styles go here */
+
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
