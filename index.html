@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-
+<!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-   <title>Web Wise- Website Creation Company</title>
+   <title>Web Wise- Website Creation Company  </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script defer src="script.js"></script>
+
+
+
+
+
+
+
   </head>
   <body>
-   
-
-    <nav>
+  
+    <nav id="navigation" class="navigation">
       <div class="logo" id="home">Web Wise</div>
       <input type="checkbox" id="click">
       <label for="click" class="menu-btn">
@@ -26,7 +33,7 @@
         <li><a href="#footer">Subscribe</a></li>
       </ul>
     </nav>
-    <div class="image-container">
+    <div class="image-container" id="image-container">
       <img src="img/pxfuel.jpg" alt="Your Image">
       <div class="image-text">
         <h2>WELCOME</h2>
@@ -36,103 +43,11 @@
     
 
 
-    <style>
-      /* Custom CSS styles for a compact design with space for photos or logo */
-      body {
-        font-family: 'Arial', sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
-      }
-  
-      header {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
-      }
-  
-      .custom-about-container {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 2rem;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-      }
-  
-      .custom-about-title {
-        color: #333;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-  
-      .custom-about-text {
-        margin-bottom: 1.5rem;
-        text-align: center;
-      }
-  
-      .custom-mission-box,
-      .custom-why-choose-us,
-      .custom-our-services {
-        background-color: #f8f8f8;
-        padding: 1.5rem;
-        border-radius: 10px;
-        margin-bottom: 1.5rem;
-      }
-  
-      .custom-mission-title,
-      .custom-why-choose-us-title,
-      .custom-our-services-title {
-        color: #333;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-  
-      .custom-why-choose-us-list,
-      .custom-services-list {
-        list-style-type: disc;
-        margin-left: 1.5rem;
-        margin-bottom: 1.5rem;
-      }
-  
-      .custom-why-choose-us-item,
-      .custom-service-item {
-        margin-bottom: 0.5rem;
-      }
-  
-      .custom-contact-button {
-        display: inline-block;
-        background-color: #333;
-        color: #fff;
-        padding: 0.75rem 1rem;
-        border-radius: 5px;
-        text-decoration: none;
-        text-align: center;
-      }
-  
-      .custom-contact-button:hover {
-        background-color: #555;
-      }
-  
-      .custom-logo-container {
-        text-align: center;
-        margin-top: 2rem;
-      }
-  
-      .custom-logo {
-        max-width: 200px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-    </style>
- 
+   
 
-  <div class="service-title" id="service-title">
+   <div class="service-title" id="service-title">
     <h4>Main  Services</h4>
-</div>
+   </div>
     <section class="service-grid pb-5 pt-5">
         <div class="container">
             <div class="row">
@@ -141,7 +56,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 text-center mb-3">
-                    <div class="service-wrap">
+                    <div class="servicewrap">
                         <div class="service-icon">
                             <i class="fa-solid fa-code"></i>
                         </div>
@@ -155,7 +70,7 @@
                 </div>
               
                 <div class="col-lg-4 col-md-6 text-center mb-3">
-                    <div class="service-wrap">
+                    <div class="servicewrap">
                         <div class="service-icon">
                             <i class="fa-solid fa-globe"></i>
                                                 </div>
@@ -168,7 +83,7 @@
                 </div>
              
                 <div class="col-lg-4 col-md-6 text-center mb-3">
-                    <div class="service-wrap">
+                    <div class="servicewrap">
                         <div class="service-icon">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                         </div>
@@ -178,10 +93,9 @@
                 
                     </div>
                 </div>
-             
-                        
-                    </div>
-                </div>
+            
+            
+            </div>
             </div>
         </div>
     </section>
@@ -193,343 +107,60 @@
       <a href="service.html"> All  Services -></a>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style>
+   <style>
   
-  .more:hover{
-    
-    background-color: #000000;
-    
-  }
-  .more a {
-    text-decoration: none;
-  color: #e8bc00;
-  }
-    .more{
-      transition: all 0.3s ease;
-      text-decoration: none;
-       text-align: center;
-       color: #ffd000;
-       font-size:230%;
-      border: 1px solid black;
-      border-radius: 5ch;
-      margin: 3% 100px;
-}
 
-    /* Add this CSS to your existing styles */
+   </style><script src="https://kit.fontawesome.com/afafe0e404.js" crossorigin="anonymous"></script>
 
-.row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
- 
-  
-  justify-content: space-between;
-}
-
-
-    @media (max-width: 768px) {
-        .row {
-    grid-template-columns: repeat(2, 1fr);}
-}
-
-@media (max-width: 576px) {
-  .service-wrap {
-    width: 100%; /* On even smaller screens, make each box 100% wide (stack vertically) */
-  }
-}
-  
-        .service-title h4 {
-       text-align: center;
-
- font-size:230%;
- border: 1px solid black;
-border-radius: 5ch;
- margin: 3% 100px;
-}
-
-.service-icon {
-  position: relative;
-}
-
-.service-title p {
-  padding: 0 190px;
-  margin-bottom: 10px;
-}
-
-.about-info-text h2 {
-  margin-bottom: 23px;
-  text-transform: capitalize;
-  font-weight: 700;
-  line-height: .9;
-}
-
-.about-info-text p {
-  padding: 0 100px;
-  font-size: 18px;
-  margin-bottom: 26px;
-  position: relative;
-}
-
-.about-content p {
-  margin-bottom: 0;
-}
-
-.about-info-text a {
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.service-icon i {
-  font-size: 40px;
-  color: #e8bc00;
-  margin-bottom: 20px;
-  display: inline-block;
-}
-
-.service-wrap {
-    background-color:  #ffffffd2;
-    width: 100.33%; /* Set each box to be 33.33% wide minus margin */
-  margin: 10px; /* Add margin to separate the boxes */
-  border: 1px solid #e6e6e6;
-  padding: 50px 30px;
-  position: relative;
-  box-sizing: border-box;
-  
-}
-
-.service-wrap p {
-  position: relative;
-}
-
-.service-wrap:hover {
-  background:black ;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: local;
-  transition: all .5s;
-}
-
-.service-wrap:hover:before {
-  background: rgba(0, 0, 0, 0.2901960784313726);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0px;
-  content: "";
-  top: 0;
-  opacity: 1;
-}
-
-.service-wrap:hover h4,
-.service-wrap:hover p {
-  color: #fff;
-}
-
-.service-wrap h4 {
-  font-weight: 600;
-  color: #1e2331;
-  margin-bottom: 17px;
-  font-size: 18px;
-  text-transform: capitalize;
-  position: relative;
-}
-
-.service-wrap a {
-  font-size: 14px;
-  font-weight: 600;
-  position: relative;
-}
-</style><script src="https://kit.fontawesome.com/afafe0e404.js" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-    <header>
-      <h1>WEB WISE</h1>
-    </header>
-
-
-<div class="top-1" id="top-1">
-
-<div class="project"><p>2</p><h2>PROJECTS</h2></div>
-<div class="staf"><p>3</p><h2>STAFF</h2></div>
-<div class="ofice"><p>1</p><h2>OFICES</h2></div>
-<div class="hapy-c"><p>1</p><h2>HAPPY CLIENTS</h2></div>
-</div>
-
-
-
-
-
-
-<div class="big-s">
-
-<div class="big-s1"><p>Beauty happens with code not by chance.We <br> employ creative tools, code and solid online <br>branding knowledge to build an elegant<br> solutions for our clients</p></div>
-
-
-</div>
-
-
-      <div class="custom-about-container">
-        <div class="custom-about-title">About Us</div>
-        <div class="custom-about-text">Welcome to Web Wise - Your Partner in Web Excellence! At Web Wise, we are passionate about creating exceptional digital experiences that elevate your online presence. As a leading web design and development company, we take pride in our commitment to delivering top-of-the-line services that cater to the unique needs of our clients.</div>
-      </div>
-    
-      <div class="custom-mission-box">
-        <div class="custom-mission-title">Our Mission</div>
-        <div class="custom-about-text">Our mission is simple: to empower businesses and individuals with innovative and engaging websites that make a lasting impact. We believe that a well-designed website is not only visually appealing but also serves as a powerful tool to connect, engage, and convert your audience.</div>
-      </div>
-    
-      <div class="custom-why-choose-us">
-        <div class="custom-why-choose-us-title">Why Choose Us?</div>
-        <ul class="custom-why-choose-us-list">
-          <li class="custom-why-choose-us-item"><h2>Expert Team</h2> Our team of highly skilled professionals brings together a diverse range of talents, from creative web designers and talented developers to meticulous QA experts. We ar united by our passion for excellence and dedication to delivering exceptional results.</li>
-          <li class="custom-why-choose-us-item"><h2>Tailored Solutions</h2> No two businesses are the same, and we understand the importance of offering customized solutions to meet your specific goals and requirements. Whether you need a stunning e-commerce platform or a simple portfolio website, we've got you covered.</li>
-          <li class="custom-why-choose-us-item"><h2>Cutting-Edge Technology</h2> We stay at the forefront of technology trends and continuously update our tools and methodologies to ensure that your website benefits from the latest advancements in the digital landscape.</li>
-          <li class="custom-why-choose-us-item"><h2>User-Centric Design</h2> A great website is more than just aesthetics; it's about creating an intuitive and enjoyable user experience. Our design philosophy revolves around putting your users first and crafting interfaces that are easy to navigate and visually captivating.</li>
-          <li class="custom-why-choose-us-item"><h2>Transparent Communication</h2> We believe that clear and open communication is the key to successful collaboration. Throughout the project's lifecycle, we keep you informed about the progress, milestones, and any adjustments that may arise.</li>
-        </ul>
-      </div>
-    
-     
-    
-      <div class="custom-logo-container">
-        <img class="custom-logo" src="img/Screenshot 2023-04-17 085432.png" alt="Your Company Logo">
-      </div>
-    
-     
-     
-        <header>
-            <h1>Contact Us</h1>
-        </header>
-        
-        <main>
-            <form action="https://formspree.io/f/xaygbbje"  id="checkout-form" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit" value="Send">Submit Review</button>
-            </form>
-        </main>
    
 
+   <div class="top1" >
 
+     <div class="project"><p>2</p><h2>PROJECTS</h2></div>
+     <div class="staf"><p>3</p><h2>STAFF</h2></div>
+     <div class="ofice"><p>1</p><h2>OFICES</h2></div>
+     <div class="hapy-c"><p>1</p><h2>HAPPY CLIENTS</h2></div>
+     </div>
+
+     
+     
+     
+     
+     <div class="bigs">
+     
+     <div class="bigs1"><p>Beauty happens with code not by chance.We <br> employ creative tools, code and solid online <br>branding knowledge to build an elegant<br> solutions for our clients</p></div>
+     
+    </div>
+
+     
+     
+           <div class="customaboutcontainer">
+             <div class="custom-about-title">About Us</div>
+             <div class="custom-about-text" >Welcome to Web Wise - Your Partner in Web Excellence! At Web Wise, we are passionate about creating exceptional digital experiences that elevate your online presence. As a leading web design and development company, we take pride in our commitment to delivering top-of-the-line services that cater to the unique needs of our clients.</div>
+           </div>
+         
+           <div class="custommissionbox">
+             <div class="custom-mission-title">Our Mission</div>
+             <div class="custom-about-text1"> Mission is simple: to empower businesses and individuals with innovative and engaging websites that make a lasting impact. We believe that a well-designed website is not only visually appealing but also serves as a powerful tool to connect, engage, and convert your audience.</div>
+           </div>
+         
+           <div class="custom-why-choose-us">
+             <div class="custom-why-choose-us-title">Why Choose Us?</div>
+             <ul class="custom-why-choose-us-list">
+               <li class="customwhychooseusitem"><div class="alighn"><i class="fa-solid fa-people-group" style="color: #f8de31;"></i></div> <div class="text"><h2>Expert Team</h2> Highly skilled professionals, diverse talents – from web designers to QA experts – united by a passion for excellence and exceptional results.</div></li>
+               <li class="customwhychooseusitem"><div class="alighn"><i class="fa-solid fa-lightbulb" style="color: #f8df31;"></i></div><div class="text"><h2>Tailored Solutions</h2>Every business is unique, and we specialize in tailoring solutions to match your goals and needs. Whether it's an e-commerce powerhouse or a sleek portfolio site, we've got you covered.</div></li>
+               <li class="customwhychooseusitem"><div class="alighn"><i class="fa-solid fa-microchip" style="color: #f7de31;"></i></div><div class="text"><h2>Cutting-Edge Technology</h2> We stay at the forefront of technology trends and continuously update our tools and methodologies to ensure that your website benefits from the latest advancements in the digital landscape.</div></li>
+               <li class="customwhychooseusitem"><div class="alighn"><i class="fa-solid fa-clock-rotate-left fa-2xl" style="color: #f3db30;"></i></div><div class="text"><h2>Quick work</h2>We are result-oriented and passionate about each of our projects, and “OK” is not good enough for us.</div></li>
+            </ul>
+           </div>
+         
+
+
+
+           <div class="custom-logo-container">
+             <img class="custom-logo" src="img/Screenshot 2023-04-17 085432.png" alt="Your Company Logo">
+           </div>
+         
           
 
 
@@ -548,107 +179,57 @@ border-radius: 5ch;
 
 
 
-
-
-
-
-
-    <footer class="footer-section" id="footer">
-      <div class="container">
-          <div class="footer-cta pt-5 pb-5">
-              <div class="row">
-                <div class="col-xl-4 col-md-4 mb-30">
-                  <div class="single-cta">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <div class="cta-text">
-                          <h4>Find us</h4>
-                          <span>1010 Avenue, sw 54321, chandigarh</span>
-                      </div>
+           <div class="background">
+            <div class="container">
+              <div class="screen">
+                <div class="screen-header">
+                  <div class="screen-header-left">
+                    <div class="screen-header-button close"></div>
+                    <div class="screen-header-button maximize"></div>
+                    <div class="screen-header-button minimize"></div>
                   </div>
-              </div>
-              <div class="col-xl-4 col-md-4 mb-30">
-                  <div class="single-cta">
-                      <i class="fas fa-phone"></i>
-                      <div class="cta-text">
-                          <h4>Call us</h4>
-                          <span>9876543210 0</span>
-                      </div>
+                  <div class="screen-header-right">
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
                   </div>
-              </div>
-              <div class="col-xl-4 col-md-4 mb-30">
-                  <div class="single-cta">
-                      <i class="far fa-envelope-open"></i>
-                      <div class="cta-text">
-                          <h4>Mail us</h4>
-                          <span>mail@info.com</span>
-                      </div>
+                </div>
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <div class="app-title">
+                      <span>CONTACT</span>
+                      <span>US</span>
+                    </div>
+                    <div class="app-contact">CONTACT INFO : +355 692636796</div>
                   </div>
-              </div>
-          </div>
-          <div class="footer-content pt-5 pb-5">
-              <div class="row">
-                  <div class="col-xl-4 col-lg-4 mb-50">
-                      
-                          <div class="footer-social-icon">
-                              <span>Follow us</span>
-                              <a href="https://www.instagram.com/web_wise1/"><i class="fab fa-instagram instagram-bg"></i></a>
-                    <a href="https://www.linkedin.com/feed/?nis=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bbrrsc5xgQAqaTNgCJputKg%3D%3D"><i class="fab fa-linkedin linkedin-bg"></i></a>
-                    <a href="https://www.tiktok.com/@web1wise?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok tiktok-bg"></i></a>
-                    <a href="https://www.facebook.com/codewithfaraz"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                    <a href="https://twitter.com/WebWise7/photo"><i class="fab fa-twitter twitter-bg"></i></a>
-                    <a href="https://github.com/farazc60"><i class="fab fa-github google-bg"></i></a>
-                          </div>
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <main>
+                        <form action="https://formspree.io/f/xaygbbje" id="checkout-form" method="post" >
+                        <input class="app-form-control" placeholder="NAME" type="text" id="name" name="name" required >
                       </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                      <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                              <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                             <li>  <a href="#home"> Home</a></li>
-                              
-                              <li>  <a href="#service-title"> services</a></li>
-                              <li>  <a href="#top-1"> About</a></li>
-                              
-                             
-                              
-                               
-                              <li>  <a href="#footer"> Contact us </a></li>
-                              
-                              
-                              
-                          </ul>
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="EMAIL" type="text" id="email" name="email" required >
+                      </div>
+                    
+                      <div class="app-form-group message">
+                        <input class="app-form-control" placeholder="MESSAGE"id="message" name="message" >
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button class="app-form-button" type="reset">CANCEL</button>
+                        <button class="app-form-button" type="submit" value="Send">SEND</button>
+                      </form>
+                    </main>
                       </div>
                     </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                      <div class="footer-widget">
-                          <div class="footer-widget-heading">
-                              
-                          </div>
-                          <div class="footer-text mb-25">
-                              <h3>Subscribe</h3>
-                              <p>Dont miss to subscribe to our new feeds, kindly fill the form below.</p>
-                          </div>
-                          <div class="subscribe-form">
-                              <form  action="https://formspree.io/f/xaygbbje"  id="checkout-form" method="post">
-                                <input type="text" id="email" name="email" placeholder="info@gmail.com" required>
-                                  <button  type="submit" value="Send" ><i class="fab fa-telegram-plane"></i></button>
-                              </form>
-                          </div>
-                      </div>
                   </div>
+                </div>
               </div>
+            
+              </div>
+            </div>
           </div>
-      </div>
-      <div class="copyright-area">
-          <div class="container">
-              <div class="row">
-                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                      <div class="copyright-text">
-                          <p>Copyright &copy; 2023 WEB WISE</p>
-                
-      </div>
 
 
 
@@ -663,36 +244,164 @@ border-radius: 5ch;
 
 
 
+
+
+
+
+
+
+
+
+
+
+        
      
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <footer class="footer-section" id="footer">
+           <div class="container">
+               <div class="footer-cta pt-5 pb-5">
+                   <div class="row">
+                     <div class="col-xl-4 col-md-4 mb-30">
+                       <div class="single-cta">
+                        <i class="fa-solid fa-map-location" style="color: #f8df31;"></i>
+                           <div class="cta-text">
+                               <h4>Lowcaydet At</h4>
+                               <span>Albania Fier</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-4 col-md-4 mb-30">
+                       <div class="single-cta">
+                           <i class="fas fa-phone"></i>
+                           <div class="cta-text">
+                               <h4>Call us</h4>
+                               <span>+355 692636796</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-4 col-md-4 mb-30">
+                       <div class="single-cta">
+                           <i class="far fa-envelope-open"></i>
+                           <div class="cta-text">
+                               <h4>Mail us</h4>
+                               <span>lifestyeo@gmail.com</span>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="footer-content pt-5 pb-5">
+                   <div class="row">
+                       <div class="col-xl-4 col-lg-4 mb-50">
+                           
+                               <div class="footer-social-icon">
+                                   <span>Follow us</span>
+                                   <a href="https://www.instagram.com/web_wise1/"><i class="fab fa-instagram instagram-bg"></i></a>
+                         <a href="https://www.linkedin.com/feed/?nis=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bbrrsc5xgQAqaTNgCJputKg%3D%3D"><i class="fab fa-linkedin linkedin-bg"></i></a>
+                         <a href="https://www.tiktok.com/@web1wise?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok tiktok-bg"></i></a>
+                         <a href="https://www.facebook.com/codewithfaraz"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                         <a href="https://twitter.com/WebWise7/photo"><i class="fab fa-twitter twitter-bg"></i></a>
+                         <a href="https://github.com/farazc60"><i class="fab fa-github google-bg"></i></a>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                           <div class="footer-widget">
+                                 <div class="footer-widget-heading">
+                                   <h3>Useful Links</h3>
+                                 </div>
+                                 <ul>
+                                  <li>  <a href="#home"> Home</a></li>
+                                   
+                                   <li>  <a href="#service-title"> services</a></li>
+                                   <li>  <a href="#top-1"> About</a></li>
+                                   
+                                  
+                                   
+                                    
+                                   <li>  <a href="#footer"> Contact us </a></li>
+                                   
+                                   
+                                   
+                               </ul>
+                           </div>
+                         </div>
+                       <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                           <div class="footer-widget">
+                               <div class="footer-widget-heading">
+                                   
+                               </div>
+                               <div class="footer-text mb-25">
+                                   <h3>Subscribe</h3>
+                                   <p>Dont miss to subscribe to our new feeds, kindly fill the form below.</p>
+                               </div>
+                               <div class="subscribe-form">
+                                   <form  id="checkout-form" method="post">
+                                     <input type="text" id="email" name="email" placeholder="info@gmail.com" required>
+                                       <button  type="submit" value="Send" ><i class="fab fa-telegram-plane"></i></button>
+                                   </form>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="copyright-area">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                           <div class="copyright-text">
+                               <p>Copyright &copy; 2023 WEB WISE</p>
+     
+                     
+           </div></div></footer></body></html>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+          
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     
+     <!-- Add a JavaScript script (after including jQuery) -->
+     <script>
+     $(document).ready(function() {
+         // Add smooth scrolling to all anchor links
+         $("a").on('click', function(event) {
+             if (this.hash !== "") {
+                 event.preventDefault();
+     
+                 var hash = this.hash;
+     
+                 $('html, body').animate({
+                     scrollTop: $(hash).offset().top
+                 }, 800, function() {
+                     window.location.hash = hash;
+                 });
+             }
+         }); // <-- Corrected the syntax here
+     });
+     
 
-<!-- Add a JavaScript script (after including jQuery) -->
-<script>
-    $(document).ready(function() {
-        // Add smooth scrolling to all anchor links
-        $("a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-
-                var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-            }
-        });
+     const observerCustomMissionBox = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showe');
+        }  // Optionally, remove the class when not in view
+        
     });
-</script>
+});
 
-  </footer>
-
-
-
-
-
-
+// Select elements with the 'custommissionbox' class and observe them using the 'observerCustomMissionBox'
+const customMissionBoxElements = document.querySelectorAll('.custommissionbox');
+customMissionBoxElements.forEach((el) => {
+    observerCustomMissionBox.observe(el);
+});
 
 
 
@@ -702,185 +411,7 @@ border-radius: 5ch;
 
 
 
-
-
-
-  <style>
-    
-    .footer-widget{
-      text-decoration: none;
-    }
-  .footer-section {
-    background: #151414;
-    position: relative;
-  }
-  .footer-cta {
-    border-bottom: 1px solid #373636;
-  }
-  .single-cta i {
-    color: #ffff00;
-    font-size: 30px;
-    float: left;
-    margin-top: 8px;
-  }
-  .cta-text {
-    padding-left: 15px;
-    display: inline-block;
-  }
-  .cta-text h4 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 2px;
-  }
-  .cta-text span {
-    color: #757575;
-    font-size: 15px;
-  }
-  .footer-content {
-    position: relative;
-    z-index: 2;
-  }
-  .footer-pattern img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 330px;
-    background-size: cover;
-    background-position: 100% 100%;
-  }
-  .footer-logo {
-    margin-bottom: 30px;
-  }
-  .footer-logo img {
-      max-width: 200px;
-  }
-  .footer-text h3{
-      color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 40px;
-    position: relative;
-  }
-  .footer-text p {
-    margin-bottom: 14px;
-    font-size: 14px;
-        color: #7e7e7e;
-    line-height: 28px;
-  }
-  .footer-social-icon span {
-    color: #fff;
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 20px;
-  }
-  .footer-social-icon a {
-    color: #fff;
-    font-size: 16px;
-    margin-right: 15px;
-  }
-  .footer-social-icon i {
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 38px;
-    border-radius: 50%;
-  }
-  .linkedin-bg{
-      background-color: blue;
-  }
-  .tiktok-bg{
-      background: #000000;
-  }
-  .instagram-bg{
-      background: #ff1414;
-  }
-  .facebook-bg{
-    background: #3B5998;
-  }
-  .twitter-bg{
-    background: #55ACEE;
-  }
-  .google-bg{
-    background: #ffd500;
-  }
-  .footer-widget-heading h3 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 40px;
-    position: relative;
-  }
-  .footer-widget-heading h3::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -15px;
-    height: 2px;
-    width: 50px;
-    background: #ff5e14;
-  }
-  .footer-widget ul li {
-   
-   padding-left: 10px;
-   width: 50%;
-   margin-bottom: 12px;
- }
- .footer-widget ul li a:hover{
-    color: #ff5e14;
-  }
-  .footer-widget ul li a {
-    text-decoration: none;
-    color: #878787;
-    text-transform: capitalize;
-  }
-  .subscribe-form {
-    position: relative;
-    overflow: hidden;
-  }
-  .subscribe-form input {
-    width: 100%;
-    padding: 14px 28px;
-    background: #2E2E2E;
-    border: 1px solid #2E2E2E;
-    color: #fff;
-  }
-  .subscribe-form button {
-      position: absolute;
-      right: 0;
-      background: #ff5e14;
-      padding: 13px 20px;
-      border: 1px solid #ff5e14;
-      top: 0;
-  }
-  .subscribe-form button i {
-    color: #fff;
-    font-size: 22px;
-    transform: rotate(-6deg);
-  }
-  .copyright-area{
-    background: #202020;
-    padding: 25px 0;
-  }
-  .copyright-text p {
-    margin: 0;
-    font-size: 14px;
-    color: #878787;
-  }
-  .copyright-text p a{
-    color: #ff5e14;
-  }
-  .footer-menu li {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  .footer-menu li:hover a{
-    color: #ff5e14;
-  }
-  .footer-menu li a {
-    font-size: 14px;
-    color: #878787;
-  }
-  </style>
+     </script>
+     
+       </footer>
+     
