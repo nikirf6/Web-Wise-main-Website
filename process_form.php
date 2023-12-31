@@ -5,7 +5,7 @@ if (isset($_POST['submit'])){
     $emailFrom = $_POST['email'];
     $message = $_POST['message'];
 
-    $mailTo = "webwise@artistrydesign.net";
+$mailTo = "emonahmad96@artistrydesign.net";
     $headers = "From: $emailFrom";
 
     if (mail($mailTo, "Subject: Contact Form Submission", $message, $headers)) {
