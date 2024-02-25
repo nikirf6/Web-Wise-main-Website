@@ -1,418 +1,89 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-   <title>WebWise: Masterful Website Creation & SEO Solutions </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <meta name="description" content="Unlock Effortless Excellence: Affordable Website Creation & SEO Magic | Elevate Your Online Presence Today">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script defer src="script.js"></script>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Text Generator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .custom-text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Custom Text Generator</h2>
+    <input type="text" id="inputWord" placeholder="Enter your custom word">
+    <button onclick="generateText()">Generate Text</button>
+    <div class="custom-text" id="customText"></div>
+</div>
 
+<script>
+    function generateText() {
+        var inputWord = document.getElementById("inputWord").value.toLowerCase();
+        var customText = document.getElementById("customText");
+        var outputText = "";
 
-
-
-
-
-
-  </head>
-  <body>
-  
-    <nav id="navigation" class="navigation">
-      <div class="logo" id="home">Web Wise</div>
-      <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#service-title">Services</a></li>
-        <li><a href="#top-1">About</a></li>
-      
-        <li><a href="#checkout-form">Contact Us</a></li>
-        <li><a href="#footer">Subscribe</a></li>
-      </ul>
-    </nav>
-    <div class="image-container" id="image-container">
-      <img src="img/pxfuel.jpg" alt="Your Image">
-      <div class="image-text">
-        <h2>WELCOME</h2>
-      </div>
-    </div>
-  
-    
-
-
-   
-
-   <div class="service-title" id="service-title">
-    <h4>Main  Services</h4>
-   </div>
-    <section class="service-grid pb-5 pt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 text-center mb-4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 text-center mb-3">
-                    <div class="servicewrap">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h4>Dsign and development</h4>
-                        <p>Creating visually appealing and functional websites from scratch.
-                            Customizing existing website templates or themes.
-                            Developing responsive and mobile-friendly designs.
-                            Integrating various features and functionalities.</p>
-                      
-                    </div>
-                </div>
-              
-                <div class="col-lg-4 col-md-6 text-center mb-3">
-                    <div class="servicewrap">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-globe"></i>
-                                                </div>
-                        <h4>Search Engine Optimization (SEO)</h4>
-                        <p>Optimizing websites for better search engine rankings.
-                            Conducting keyword research and on-page optimization.
-                            Implementing strategies to improve organic traffic.</p>
-                        
-                    </div>
-                </div>
-             
-                <div class="col-lg-4 col-md-6 text-center mb-3">
-                    <div class="servicewrap">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
-                        </div>
-                        <h4>Website Maintenance and Support</h4>
-                        <p>Providing ongoing updates, security patches, and maintenance for websites.
-                            Troubleshooting issues, resolving bugs, and ensuring smooth operation.</p>
-                
-                    </div>
-                </div>
+        // shkruaj inputin/fjalen e par te dali outputi/fjalia
+        var wordMap = {
+            "Pune": "Fjale pak , pune shume.",
+            "Fjale":"Fjale pak , pune shume.",
+            "Gune": "Shikoj punen ,jo gunen.",
+            "SHkendije":"Nje shkendije ndez nje mae",
+            "Qeni" :"Permend qenin, bej gati shkopin.",
+            "Shkopi":"Permend qenin, bej gati shkopin.",
+            "Karvani":"qente lehin karvani ecen perpara.",
+"miku":"me mikun ha e pi te dhene e te marre mos ki ",
+"thesi":"mbushet thesi me nje kokerr.",
+"ujku":"ujku qimen e harron pr zakonin se harron.",
+"zakoni":"ujku qimen e harron pr zakonin se harron.",
+"shoke":"shoke bashk e buke vec",
+"vetem":"kush ha vetem vdes dhe vetem.",
+"diell":"Edhe diell te behesh te gjith nuk i ngroh dot.",
+"gur":"bie nje gur e leviz ne mur!",
+"Derdhet":"Atje ku ka derdhet",
+"Femije":"shtepija pa femije si nata pa yje",
+"Me te bere":"me thère e me te bère shkon nemesnje lume i tere",
+"miku":"Miku harrohet po te largohet ",
+"Njeriu":"Njeriu pa shoke si muri pa toke.",
+"i fundit":"i fundit ja do qaj ja do qeshe",
+"Qesh":"Qesh mir kush qesh i fundit",
+"mirmengjes":"Mirmengjes me interes"
             
-            
-            </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <div class="more" id="more">
-      <a href="service.html"> All  Services -></a>
-    </div>
-
-   <style>
-  
-
-   </style><script src="https://kit.fontawesome.com/afafe0e404.js" crossorigin="anonymous"></script>
-
-   
-
-   <div class="top1" >
-
-     <div class="project"><p>2</p><h2>PROJECTS</h2></div>
-     <div class="staf"><p>3</p><h2>STAFF</h2></div>
-     <div class="ofice"><p>1</p><h2>OFICES</h2></div>
-     <div class="hapy-c"><p>1</p><h2>HAPPY CLIENTS</h2></div>
-     </div>
-
-     
-     
-     
-     
-     <div class="bigs">
-     
-     <div class="bigs1"><p>Beauty happens with code not by chance.We <br> employ creative tools, code and solid online <br>branding knowledge to build an elegant<br> solutions for our clients</p></div>
-     
-    </div>
-
-     
-     
-           <div class="customaboutcontainer">
-             <div class="custom-about-title">About Us</div>
-             <div class="custom-about-text" >Welcome to Web Wise - Your Partner in Web Excellence! At Web Wise, we are passionate about creating exceptional digital experiences that elevate your online presence. As a leading web design and development company, we take pride in our commitment to delivering top-of-the-line services that cater to the unique needs of our clients.</div>
-           </div>
-         
-           <div class="custommissionbox">
-             <div class="custom-mission-title">Our Mission</div>
-             <div class="custom-about-text1"> Mission is simple: to empower businesses and individuals with innovative and engaging websites that make a lasting impact. We believe that a well-designed website is not only visually appealing but also serves as a powerful tool to connect, engage, and convert your audience.</div>
-           </div>
-         
-           <div class="custom-why-choose-us">
-             <div class="custom-why-choose-us-title">Why Choose Us?</div>
-             <ul class="custom-why-choose-us-list">
-               <li class="customwhychooseusitem"><div class="alighn"><i class="fa-solid fa-people-group" style="color: #f8de31;"></i></div> <div class="text"><h2>Expert Team</h2> Highly skilled professionals, diverse talents – from web designers to QA experts – united by a passion for excellence and exceptional results.</div></li>
-               <li class="customwhychooseusitem"><div class="alighn"><i class="fa-solid fa-lightbulb" style="color: #f8df31;"></i></div><div class="text"><h2>Tailored Solutions</h2>Every business is unique, and we specialize in tailoring solutions to match your goals and needs. Whether it's an e-commerce powerhouse or a sleek portfolio site, we've got you covered.</div></li>
-               <li class="customwhychooseusitem"><div class="alighn"><i class="fa-solid fa-microchip" style="color: #f7de31;"></i></div><div class="text"><h2>Cutting-Edge Technology</h2> We stay at the forefront of technology trends and continuously update our tools and methodologies to ensure that your website benefits from the latest advancements in the digital landscape.</div></li>
-               <li class="customwhychooseusitem"><div class="alighn"><i class="fa-solid fa-clock-rotate-left fa-2xl" style="color: #f3db30;"></i></div><div class="text"><h2>Quick work</h2>We are result-oriented and passionate about each of our projects, and “OK” is not good enough for us.</div></li>
-            </ul>
-           </div>
-         
-
-
-
-           <div class="custom-logo-container">
-             <img class="custom-logo" src="img/Screenshot 2023-04-17 085432.png" alt="Your Company Logo">
-           </div>
-         
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           <div class="background">
-            <div class="container">
-              <div class="screen">
-                <div class="screen-header">
-                  <div class="screen-header-left">
-                    <div class="screen-header-button close"></div>
-                    <div class="screen-header-button maximize"></div>
-                    <div class="screen-header-button minimize"></div>
-                  </div>
-                  <div class="screen-header-right">
-                    <div class="screen-header-ellipsis"></div>
-                    <div class="screen-header-ellipsis"></div>
-                    <div class="screen-header-ellipsis"></div>
-                  </div>
-                </div>
-                <div class="screen-body">
-                  <div class="screen-body-item left">
-                    <div class="app-title">
-                      <span>CONTACT</span>
-                      <span>US</span>
-                    </div>
-                    <div class="app-contact">CONTACT INFO : +355 692636796</div>
-                  </div>
-                  <div class="screen-body-item">
-                    <div class="app-form">
-                      <div class="app-form-group">
-                        <main>
-<form action="process_form.php" id="checkout-form" method="POST">
-                        <input class="app-form-control" placeholder="NAME"  type="text" id="first_name" name="first_name" required >
-                      </div>
-                      <div class="app-form-group">
-                        <input class="app-form-control" placeholder="EMAIL" type="email" id="email" name="email" required >
-                      </div>
-                    
-                      <div class="app-form-group message">
-                        <input class="app-form-control" placeholder="MESSAGE"id="message" name="message" required >
-                      </div>
-                      <div class="app-form-group buttons">
-                        <button class="app-form-button" type="reset">CANCEL</button>
-<button class="app-form-button" type="submit" name="submit">SEND</button>
-                      </form>
-                    </main>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-     
-         <footer class="footer-section" id="footer">
-           <div class="container">
-               <div class="footer-cta pt-5 pb-5">
-                   <div class="row">
-                     <div class="col-xl-4 col-md-4 mb-30">
-                       <div class="single-cta">
-                        <i class="fa-solid fa-map-location" style="color: #f8df31;"></i>
-                           <div class="cta-text">
-                               <h4>Lowcaydet At</h4>
-                               <span>Albania Fier</span>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-xl-4 col-md-4 mb-30">
-                       <div class="single-cta">
-                           <i class="fas fa-phone"></i>
-                           <div class="cta-text">
-                               <h4>Call us</h4>
-                               <span>+355 692636796</span>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-xl-4 col-md-4 mb-30">
-                       <div class="single-cta">
-                           <i class="far fa-envelope-open"></i>
-                           <div class="cta-text">
-                               <h4>Mail us</h4>
-                               <span>lifestyeo@gmail.com</span>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="footer-content pt-5 pb-5">
-                   <div class="row">
-                       <div class="col-xl-4 col-lg-4 mb-50">
-                           
-                               <div class="footer-social-icon">
-                                   <span>Follow us</span>
-                                   <a href="https://www.instagram.com/web_wise1/"><i class="fab fa-instagram instagram-bg"></i></a>
-                         <a href="https://www.linkedin.com/feed/?nis=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bbrrsc5xgQAqaTNgCJputKg%3D%3D"><i class="fab fa-linkedin linkedin-bg"></i></a>
-                         <a href="https://www.tiktok.com/@web1wise?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok tiktok-bg"></i></a>
-                         <a href="https://www.facebook.com/codewithfaraz"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                         <a href="https://twitter.com/WebWise7/photo"><i class="fab fa-twitter twitter-bg"></i></a>
-                         <a href="https://github.com/farazc60"><i class="fab fa-github google-bg"></i></a>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                           <div class="footer-widget">
-                                 <div class="footer-widget-heading">
-                                   <h3>Useful Links</h3>
-                                 </div>
-                                 <ul>
-                                  <li>  <a href="#home"> Home</a></li>
-                                   
-                                   <li>  <a href="#service-title"> services</a></li>
-                                   <li>  <a href="#top-1"> About</a></li>
-                                   
-                                  
-                                   
-                                    
-                                   <li>  <a href="#footer"> Contact us </a></li>
-                                   
-                                   
-                                   
-                               </ul>
-                           </div>
-                         </div>
-                       <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                           <div class="footer-widget">
-                               <div class="footer-widget-heading">
-                                   
-                               </div>
-                               <div class="footer-text mb-25">
-                                   <h3>Subscribe</h3>
-                                   <p>Dont miss to subscribe to our new feeds, kindly fill the form below.</p>
-                               </div>
-                               <div class="subscribe-form">
-                                   <form  id="checkout-form" method="post">
-                                     <input type="text" id="email" name="email" placeholder="info@gmail.com" required>
-                                       <button  type="submit" value="Send" ><i class="fab fa-telegram-plane"></i></button>
-                                   </form>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="copyright-area">
-               <div class="container">
-                   <div class="row">
-                       <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                           <div class="copyright-text">
-                               <p>Copyright &copy; 2023 WEB WISE</p>
-     
-                     
-           </div></div></footer></body></html>
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-          
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     
-     <!-- Add a JavaScript script (after including jQuery) -->
-     <script>
-     $(document).ready(function() {
-         // Add smooth scrolling to all anchor links
-         $("a").on('click', function(event) {
-             if (this.hash !== "") {
-                 event.preventDefault();
-     
-                 var hash = this.hash;
-     
-                 $('html, body').animate({
-                     scrollTop: $(hash).offset().top
-                 }, 800, function() {
-                     window.location.hash = hash;
-                 });
-             }
-         }); // <-- Corrected the syntax here
-     });
-     
-
-     const observerCustomMissionBox = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('showe');
-        }  // Optionally, remove the class when not in view
-        
-    });
-});
-
-// Select elements with the 'custommissionbox' class and observe them using the 'observerCustomMissionBox'
-const customMissionBoxElements = document.querySelectorAll('.custommissionbox');
-customMissionBoxElements.forEach((el) => {
-    observerCustomMissionBox.observe(el);
-});
-
-
-
-
-
-
-
-
-
-     </script>
-     
-       </footer>
-     
+        };
+
+        if (wordMap.hasOwnProperty(inputWord)) {
+            outputText = wordMap[inputWord];
+        } else {
+            outputText = "No matching output for '" + inputWord + "'";
+        }
+
+        customText.innerHTML = "Your custom text: <strong>" + outputText + "</strong>";
+    }
+</script>
+</body>
+</html>
