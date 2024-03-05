@@ -1,89 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Custom Text Generator</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    .container {
-        max-width: 600px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    input[type="text"] {
-        width: 300px;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-    button {
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-    }
-    button:hover {
-        background-color: #0056b3;
-    }
-    .custom-text {
-        font-size: 24px;
-        margin-top: 20px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shabllone</title>
 </head>
 <body>
-<div class="container">
-    <h2>Custom Text Generator</h2>
-    <input type="text" id="inputWord" placeholder="Enter your custom word">
-    <button onclick="generateText()">Generate Text</button>
-    <div class="custom-text" id="customText"></div>
+    <div class="shab">
+    <H1>shabllone</H1>
+    <img src="shabllon-i-mobiljeve-dhe-dekorimi-i-dizajnit-të-brendshëm.jpg" alt="">
 </div>
-
-<script>
-    function generateText() {
-        var inputWord = document.getElementById("inputWord").value.toLowerCase();
-        var customText = document.getElementById("customText");
-        var outputText = "";
-
-        // shkruaj inputin/fjalen e par te dali outputi/fjalia
-        var wordMap = {
-            "Pune": "Fjale pak , pune shume.",
-            "Fjale":"Fjale pak , pune shume.",
-            "Gune": "Shikoj punen ,jo gunen.",
-            "SHkendije":"Nje shkendije ndez nje mae",
-            "Qeni" :"Permend qenin, bej gati shkopin.",
-            "Shkopi":"Permend qenin, bej gati shkopin.",
-            "Karvani":"qente lehin karvani ecen perpara.",
-"miku":"me mikun ha e pi te dhene e te marre mos ki ",
-"thesi":"mbushet thesi me nje kokerr.",
-"ujku":"ujku qimen e harron pr zakonin se harron.",
-"zakoni":"ujku qimen e harron pr zakonin se harron.",
-"shoke":"shoke bashk e buke vec",
-"vetem":"kush ha vetem vdes dhe vetem.",
-"diell":"Edhe diell te behesh te gjith nuk i ngroh dot.",
-"gur":"bie nje gur e leviz ne mur!",
-"Derdhet":"Atje ku ka derdhet",
-"Femije":"shtepija pa femije si nata pa yje",
-"Me te bere":"me thère e me te bère shkon nemesnje lume i tere",
-"miku":"Miku harrohet po te largohet ",
-"Njeriu":"Njeriu pa shoke si muri pa toke.",
-"i fundit":"i fundit ja do qaj ja do qeshe",
-"Qesh":"Qesh mir kush qesh i fundit",
-"mirmengjes":"Mirmengjes me interes"
-            
-        };
-
-        if (wordMap.hasOwnProperty(inputWord)) {
-            outputText = wordMap[inputWord];
-        } else {
-            outputText = "No matching output for '" + inputWord + "'";
-        }
-
-        customText.innerHTML = " <strong>" + outputText + "</strong>";
-    }
-</script>
 </body>
 </html>
+<style>.shab{
+    text-align: center;
+
+}
+.shab img {
+    width: 60%;
+}</style>
+
+
+
+
